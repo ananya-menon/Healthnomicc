@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HEALTHNOMIC</title> 
+	<link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/carousel/#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/features.css" rel="stylesheet">
+	<link href="D:\Desktop\project\bootstrap-5.0.0-beta3-dist\css\bootstrap.min.css" rel="stylesheet">
+    <link href="D:\Desktop\project\carousel.css" rel="stylesheet">
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=_w9sR8wAAp5oe2H85Ka1WiGGeg5Q8KtIkxvLSVdNqEhRKpppfPovel-OtPj5H8_FCrZth3VYfL6avD4sbNMnT6FGIp01IggXcM49NPDCqMHpYyZ6NOt8o1DCMRYUcQQbaWKdFxSzxoB87Cn3a4Ersi4xGoeLRcOhvl-hfo9Kkg_aUdWDVsqv67v8tHfv4oVZSFignNj3Ioqi0gXCfuYkTNxOHj6mQxbreQlDWwmEtRxGtEXhjvKgFcF7UySu2qeCZDn3ulFgSCrLLBur1xk9kQRkFl1scY4XF8UUY-EZjlQYSoaq29Hm23oYwuURitRbaKsqzrxLp7jNrDAnEsMOsWjyFhDRyD9_AXTNUbkC2tvPNOoFgcdrtGDE5XrNTiWITj2iwvZZ0RjGKYOvUVyZS8gELgXDbGtwVe8Lv4H9hp5P4AaYn8D0YGNAXFcD0WQ61iKxHp54vdSHTVfG-O4XQ7CjNgUB9RmbKnaVjsjmfZZFbMtE27EUGvXA11CYXAteYreWkBcYvc6dOR-PlKTkMqk0YudbPsFUF0AYipM5CKttx_vrrwe7fJhnW-ln0lyuo3bok0h9vzGBaqWEvGUIasYEbSbOzCLeJdnrJn37vWqWWwb4NmskfAD7rrJcTbjp6L4hxCpRwm1h51N39u2DbPbDSRbaS0FNKtXqN0okS_4tcFkrDcOJbe5jcDeFH4p5-OnSlcZYpHrVy65qO8smJTdWJiir1vyioecIXiujEptZqx3La0o1zWofL9XMwrwUwEAJzddu4OVpXZTvLV3zGxVnUEY3daSZeU3Q1kg7d_aXl-qVKOUSg1I9j7GVjJtrAa1eDdC0tyunvX_wMWLi6MbEIa9a5QlsJD8UUAfEQpfgy41g2gpxDmtiPqK5UrskEvu4wbml7WTpddkGFpww5xILsArKoVAMfieiB4SchUp61R1NKBAna1o8dZxRpKs65c1ieDACMy9bUVLqzkMPMYYXDIsg-3PuxB_8j9xDYVjqoXw_bDdpfKNf-2slpmbeP-s6aVb89Kru9oPNobTgeT9O2atCModl5yvtJtB9WrhvJCSwwSwoeD0M2kzIoxgTEiIG9og5IyhdwtSNY1Ioa6gph6wN04q2fSiOlVlUFfvtGDS6aBXSTc5AKcmOfCg0fyvnswwwD7L2K8wAz4a-M2DimOzDtPsoh3XDZB1fc1AzB8PUokm9vWMeFHJEt_J2Qi6sWDASytS3Mi06vi7JAg" nonce="36995eda708e204792f32146415e1c88" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPTMyYWM2MzUwOGEmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctZjoxNjk2OTMwNDU5ODA4OTM3MTk3JnRoPTE3OGNiNTQzMzE3M2I0ZWQmdmlldz1hdHQmZGlzcD1zYWZlJnJlYWxhdHRpZD1mX2tuZzFhbnBrMCZzYWRkYmF0PUFOR2pkSi04cUp3OXUyYi1NTUI2cWtMVjl4T3pmSUhvT0c3cWRPZElVZkZBc1dUb3BFQzVpUW1rdkFFSl90YzN2d2pVRXk1cFdkcVg0aVdod3YxODFrMW1vVzItU3RFY2Q0QTV0Nm9ldEFaTFBONmFvOUx0cWxXVGYtZHhkSHpkTmRfOFRVX202akJVWEhvc0hDTlZncEthSWtXazdVRzBMSHdwYzRaUUZoOGx6bm02QmJGSVlralpGSVZpbmZSTk1ETXFKYUU0ZDFCbHVJMnRGbjhKWHItc0NTRVo3b1MzMkdvX1JSNE1sVXAwbkZzNUtwSDN2UUZpUTNESVBLMy1zR1lpX2lWaVVXY3E4NXNwNHZodVRXd1M0c2ZzMDBHaldmSGxtdmlEempjSXRfaGVRbFo1d0hkejlCcHJSR3lOeUl0c1YxSE1TUEFOenUydjRGRzlVQ1otMXZZRzd5UmwxV3d5eTEzcW50UGx4YjdUYVBJVEpoNGxyOXVZMUFTQW1jLVFEVWYwSXRlZlpqa25WMk16UWJDM0x2emJzZmphZHNTN0VfWTJqaVgtQVlxdlN1WkNLYnR3c1hNQnBjOG5aNEhQajFfVjUyRjB6NGVJUzdEclZNbzBCTG5mZURVcWlaWHh4emZsUjBXTVBLdVIwYUpZUW1tZ2xNamFNYjN4RV9KZXRBU0FuaGxXVlZkdkQxSHY0VHZSMmNhY0xfNkxHQTF2TEV0aG9QWXRmck93WVNteDA2MmRITmdicnhxLXNwNjYtX3hxZ052dEpHS2hBTXFnVlZ4TjVlUk54Wm1YR05TWVhITFVQekhPdURhX3JQYlNGYUhrM3l1eVNqZGlHZnBhRU5TMVFqOFNKSmk0alZkZ2gyNDZkOGFHbm54S25BcVRFRU8xNFVaVkx6cFQ5RWtQT0QzdENNclM5bUU"/><style>
+        demo{
+            border: 1px black;
+        }
+        h1{
+            text-align: center;
+			color: black;
+			
+        }
+        p
+        {
+            text-align: center;			  
+        }
+        
+     
+    <style>
+        .content {
+          max-width: 500px;
+          margin: auto; 
+          text-align:center ;   
+        }  
+        
+body {
+
+  background-image: url('https://bernardmarr.com/img/What%20Is%20The%20Impact%20Of%20Artificial%20Intelligence%20(AI)%20On%20Society.png');
+  background-repeat: repeat;
+  background-size: cover; 
+}
+
+        .buttons
+        {
+            text-decoration: none;
+            color:black; 
+            line-height: 3em;
+            display:inline-block;
+            padding-left: 10px;
+            float: left;
+            padding-right: 10px;
+            font-family: courier new;
+            -moz-transition: 1s linear;
+            -ms-transition: 1s linear;
+            -o-transition: 1s linear;
+            -webkit-transition: 1s linear;
+            transition: 1s linear;
+            text-align: center;
+            border: white; 
+            font-style: normal;
+            
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+
+        } 
+        button:hover { 
+    color: white; 
+    background:paleturquoise;
+    
+} 
+header {
+    font-family:'Times New Roman', Times, serif;  
+    padding-top: 40;
+    padding-bottom: 40;
+    background-color:aqua; 
+    color: #d8ebb5;
+    font-weight: bolder; 
+    
+}
+
+    </style>
+        
+</head>
+<body>
+    <header>
+        <h1>HEALTHNOMIC</h1>
+    </header>             
+        
+        <div class="content"><a href="https://pcos26.herokuapp.com/" class="icon-link">          
+        <button  class="buttons";type="button">PCOS </button></div></a>    
+        <div class="content"><a href="https://kidney26.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Chronic Kidney Disease </button></div></a> 
+        <div class="content"><a href="https://depression26.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Depression</button></div></a>         
+        <div class="content"><a href="https://breast26.herokuapp.com/" class="icon-link">           
+            <button  class="buttons";type="button">Breast Cancer </button></div></a> 
+        <div class="content"><a href="https://lung26.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Lung Cancer</button></div></a>
+        <div class="content"><a href="https://heart26.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Heart Disease</button></div></a> 
+        <div class="content"><a href="https://livercirrhosis.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Liver Cirrhosis</button></div></a>  
+        <div class="content"><a href="https://asthma26.herokuapp.com/" class="icon-link">           
+        <button  class="buttons";type="button">Asthma</button></div></a>       
+	<div class="content"><a href="https://parkinsonss26.herokuapp.com/" class="icon-link">          
+        <button  class="buttons";type="button">Parkinson's Disease </button></div></a> 
+        <div class="content"><a href="https://diabetes26.herokuapp.com" class="icon-link">          
+        <button  class="buttons";type="button">Diabetes</button></div></a>  
+        
+        <div class="container">
+            <div class="row-justify-content-center">
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVkTW9DQEttrHxsn3RcnWANT7jctvcIQouDrA4mY6GcASbGPmEwKnIlgaBV5TbfzKOHz0&usqp=CAU" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Depression</h5>
+                          <p class="card-text">A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life.</p>
+                          <a href="https://depression26.herokuapp.com/" class="btn btn-success">Check if you have Depression</a>
+                        </div>
+                      </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="http://cdn.shopify.com/s/files/1/2028/2057/articles/PCOS_1024x1024.jpg?v=1586249796" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">PCOS</h5>
+                          <p class="card-text">A condition that affects a woman's hormone levels. Women with PCOS produce higher-than-normal amounts of male hormones. This hormone imbalance causes them to skip menstrual periods and makes it harder for them to get pregnant </p>
+                          <a href="https://depression26.herokuapp.com/" class="btn btn-success">Check if you have PCOS</a>
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow" style="width: 20rem;">
+                        <div class="inner">
+                            <img src="https://www.news-medical.net/image.axd?picture=2018%2F5%2FshutterstockBy_u3d.jpg" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body text-center">
+                          <h5 class="card-title">Asthma</h5>
+                          <p class="card-text">A condition in which a person's airways become inflamed, narrow and swell and produce extra mucus, which makes it difficult to breathe.</p>
+                          <a href="https://depression26.herokuapp.com/" class="btn btn-success">Check if you have Asthma</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+
+</body>
+</html> 
